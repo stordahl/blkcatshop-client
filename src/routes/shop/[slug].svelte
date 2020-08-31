@@ -28,7 +28,7 @@
     let productType = product.product_type;
     let productToken = product.product_token;
 
-    let prodID = product._id;
+    // let prodID = product._id;
     let slug = product.slug.current;
     let title = product.title;
 
@@ -73,7 +73,7 @@
 
     {#if productType == 'physical'}
         <button class="snipcart-add-item"
-            data-item-id="{ prodID }"
+            data-item-id="{ slug }"
             data-item-price="{ price }"
             data-item-url="/shop/{ slug }"
             data-item-description="{ blurb }"
@@ -88,7 +88,7 @@
         </button>
     {:else if productType == 'digital'}
         <button class="snipcart-add-item"
-            data-item-id="{ prodID }"
+            data-item-id="{ slug }"
             data-item-price="{ price }"
             data-item-url="/shop/{ slug }"
             data-item-description="{ blurb }"
