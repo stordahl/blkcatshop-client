@@ -73,7 +73,7 @@
 
     {#if productType == 'physical'}
         <button class="snipcart-add-item"
-            data-item-id="{ title }"
+            data-item-id="{ prodID }"
             data-item-price="{ price }"
             data-item-url="/shop/{ slug }"
             data-item-description="{ blurb }"
@@ -90,7 +90,7 @@
         <button class="snipcart-add-item"
             data-item-id="{ prodID }"
             data-item-price="{ price }"
-            data-item-url="/shop/{ slug }}"
+            data-item-url="/shop/{ slug }"
             data-item-description="{ blurb }"
             data-item-image="{ newImg }"
             data-item-name="{ title }"
