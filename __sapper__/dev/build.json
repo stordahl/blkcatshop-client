@@ -1,0 +1,56 @@
+{
+  "bundler": "rollup",
+  "shimport": "1.0.1",
+  "assets": {
+    "main": "client.eb2e941e.js"
+  },
+  "dependencies": {
+    "../client.js": [],
+    "index.svelte": [
+      "client.eb2e941e.js"
+    ],
+    "about.svelte": [
+      "client.eb2e941e.js"
+    ],
+    "shop/index.svelte": [
+      "client.eb2e941e.js",
+      "sanityClient.1932ff1a.js"
+    ],
+    "shop/[slug].svelte": [
+      "client.eb2e941e.js",
+      "sanityClient.1932ff1a.js"
+    ],
+    "tag/index.svelte": [
+      "client.eb2e941e.js"
+    ],
+    "tag/[slug].svelte": [
+      "client.eb2e941e.js"
+    ],
+    "../../node_modules/sapper/sapper-dev-client.js": []
+  },
+  "css": {
+    "main": "main.2027605894.css",
+    "chunks": {
+      "index.svelte": [
+        "client.eb2e941e.css"
+      ],
+      "about.svelte": [
+        "client.eb2e941e.css"
+      ],
+      "shop/index.svelte": [
+        "index.1dea4ca5.css",
+        "client.eb2e941e.css"
+      ],
+      "shop/[slug].svelte": [
+        "[slug].f66db1f2.css",
+        "client.eb2e941e.css"
+      ],
+      "tag/index.svelte": [
+        "client.eb2e941e.css"
+      ],
+      "tag/[slug].svelte": [
+        "client.eb2e941e.css"
+      ]
+    }
+  }
+}
