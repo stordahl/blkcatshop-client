@@ -75,7 +75,7 @@
         <button class="snipcart-add-item"
             data-item-id="{ slug }"
             data-item-price="{ price }"
-            data-item-url="/shop/{ slug }"
+            data-item-url="https://blkcatshop-client.netlify.app/shop/{ slug }"
             data-item-description="{ blurb }"
             data-item-image="{ newImg }"
             data-item-name="{ title }"
