@@ -41,7 +41,7 @@
 
     let blurb = product.blurb.en;
     let body = product.body.en;
-    let price = product.defaultProductVariant.price;
+    let price = product.defaultProductVariant.price.toFixed(2);
     let tags = product.tags;
 
     let imgPath = 'https://cdn.sanity.io/images/bnc9z6ut/production/' + product.defaultProductVariant.images[0].asset._ref;
