@@ -25,6 +25,7 @@
 
     export let product;
 
+    let id = product._id;
     let productType = product.product_type;
     let productToken = product.product_token;
 
@@ -80,7 +81,7 @@
 
     {#if productType == 'physical'}
         <button class="snipcart-add-item"
-            data-item-id="{ slug }"
+            data-item-id="{ id }"
             data-item-price="{ price }"
             data-item-url="/shop/{ slug }"
             data-item-description="{ blurb }"
@@ -95,7 +96,7 @@
         </button>
     {:else if productType == 'digital'}
         <button class="snipcart-add-item"
-            data-item-id="{ slug }"
+            data-item-id="{ id }"
             data-item-price="{ price }"
             data-item-url="/shop/{ slug }"
             data-item-description="{ blurb }"
