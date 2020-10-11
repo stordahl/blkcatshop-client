@@ -26,7 +26,6 @@
     export let product;
 
     let productType = product.product_type;
-    console.log(productType);
     let productToken = product.product_token;
 
     // let prodID = product._id;
@@ -57,7 +56,14 @@
         });
     }
     let variantsStr = variantsArr.toString().replace(/,/g, "|");
-    
+
+    const snipcartJSON = () =>{
+        return {
+            "id": `${slug}`,
+            "price": `${price}`,
+            "url": `https://blkcatshop-client.netlify.app/shop/${slug}`
+        }
+    };
 </script>
 
 <svelte:head>
