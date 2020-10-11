@@ -38,8 +38,6 @@
 
     let images = product.defaultProductVariant.images;
 
-    // console.log(images);
-
     let blurb = product.blurb.en;
     let body = product.body.en;
     let price = product.defaultProductVariant.price.toFixed(2);
@@ -58,13 +56,6 @@
     }
     let variantsStr = variantsArr.toString().replace(/,/g, "|");
 
-    const snipcartJSON = () =>{
-        return {
-            "id": `${slug}`,
-            "price": `${price}`,
-            "url": `https://blkcatshop-client.netlify.app/shop/${slug}`
-        }
-    };
 </script>
 
 <svelte:head>
@@ -83,7 +74,7 @@
         <button class="snipcart-add-item"
             data-item-id="{ id }"
             data-item-price="{ price }"
-            data-item-url="/shop/{ slug }"
+            data-item-url="https://bnc9z6ut.api.sanity.io/v1/data/query/production?query=*[slug.current =={ slug }]"
             data-item-description="{ blurb }"
             data-item-image="{ newImg }"
             data-item-name="{ title }"
@@ -98,7 +89,7 @@
         <button class="snipcart-add-item"
             data-item-id="{ id }"
             data-item-price="{ price }"
-            data-item-url="/shop/{ slug }"
+            data-item-url="https://bnc9z6ut.api.sanity.io/v1/data/query/production?query=*[slug.current =={ slug }]"
             data-item-description="{ blurb }"
             data-item-image="{ newImg }"
             data-item-name="{ title }"
