@@ -8,7 +8,7 @@
         projectId: 'bnc9z6ut',
         dataset: 'production',
         token: '', // or leave blank to be anonymous user
-        useCdn: false // `false` if you want to ensure fresh data
+        useCdn: true // `false` if you want to ensure fresh data
     });
         
     let prodsArr = [];

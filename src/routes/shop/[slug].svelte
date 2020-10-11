@@ -26,6 +26,7 @@
     export let product;
 
     let productType = product.product_type;
+    console.log(productType);
     let productToken = product.product_token;
 
     // let prodID = product._id;
