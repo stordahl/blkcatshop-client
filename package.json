@@ -13,11 +13,9 @@
   },
   "dependencies": {
     "@sanity/client": "^1.150.1",
-    "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "compression": "^1.7.1",
     "polka": "next",
-    "sirv": "^1.0.0",
-    "woocommerce": "^2.4.0"
+    "sirv": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
